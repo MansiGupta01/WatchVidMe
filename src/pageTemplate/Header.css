@@ -1,0 +1,73 @@
+.header {
+    background: rgba(0, 0, 0);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3); 
+    color: white;
+    padding: 0 20px;
+    border-bottom: 1px solid white; 
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+.icon {
+    flex: 1;
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+}
+
+button.headerIcon {
+    cursor: pointer;
+    background: rgba(255, 217, 0, 0.95);
+    padding: 10px 15px;
+    border-radius: 12px;
+    color: black;
+    font-size: 19px;
+    font-weight: bolder; 
+    font-family: fantasy, cursive, sans-serif;
+    letter-spacing: 1px;
+    border: none;
+    transition: 0.3s ease;
+}
+
+button.headerIcon:hover {
+    background: rgb(158, 158, 4);
+    color: rgb(0, 0, 0);
+}
+
+.userCredentials {
+    display: flex;
+    gap: 15px;
+    margin-right: 50px;
+}
+
+.userCredentials span {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.headerWatchList {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.watchListIcon {
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 60px;
+        padding: 0 10px;
+    }
+    button.headerIcon {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+}
